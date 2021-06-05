@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<SplitPane dividerPositions="0.12907268170426064" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wsclient.MainController">
+    <items>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+             
+
+                <JFXButton onAction="#addBanque"  fx:id="add" maxWidth="100.0" prefWidth="100.0" text=" ">
+                  
+                </JFXButton>
+                <JFXButton onAction="#editBanque"  fx:id="edit" layoutX="10.0" layoutY="82.0" maxWidth="100.0" prefWidth="100.0" text="  ">
+                
+                </JFXButton>
+                <JFXButton onAction="#supprimerBanque"  fx:id="remove" layoutX="10.0" layoutY="106.0" maxWidth="100.0" prefWidth="100.0" text=" ">
+                 
+                </JFXButton>
+            </children>
+        </VBox>
+        <TableView fx:id="tableview" prefHeight="305.0">
+            <columns>
+                <TableColumn fx:id="nBanque" prefWidth="233.0" text="nBanque" />
+                <TableColumn fx:id="nCompte" prefWidth="233.0" text="nCompte" />
+                <TableColumn fx:id="nCompteEuro" prefWidth="233.0" text="nCompteEuro" />
+            </columns>
+        </TableView>
+    </items>
+</SplitPane>
